@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- Enlazo la hoja de estilos principal -->
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <!-- Preconecto para optimizar la carga de fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Importo la fuente Oswald desde Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Importo la fuente Raleway desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Importo la fuente Alata desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <title>Constancias</title>
+  </head>
+
+  <body>
+    <!-- Contenedor para el logotipo -->
+    <div class="ContenedorImagen">
+      <img src="/assets/Logotipo Arkketipos.png" alt="" class="ImgContainer" />
+    </div>
+    <!-- Sección de componentes con texto y buscador -->
+    <div class="components">
+      <div class="ComponentsText">
+        <h1 class="title">Constancias</h1>
+        <p class="Subtitulo">
+          Descarga tus constancias obtenidas, durante tu aprendizaje
+        </p>
+      </div>
+
+      <div class="ComponentsBuscador">
+        <input
+          id="Bcursos"
+          type="text"
+          placeholder="Buscar constancia"
+          class="buscador"
+        />
+      </div>
+    </div>
+    <!-- Contenedor principal para los datos de las constancias -->
+    <div class="Contenedores" id="contenedores">
+      <div class="container" id="contenido">
+        <div class="fondo" id="gradientefondo">
+          <div class="fondocalificacion">
+            <div class="calificacion" id="circulo">
+              <!-- Imagen para la medalla, inicialmente vacía -->
+              <img src="" alt="" width="35px" id="medalla" class="medallas" />
+            </div>
+          </div>
+          <div class="figura figura:hover" id="arkk">
+            <!-- Imagen del ícono de la medalla -->
+            <img src="assets/icons/medallaRecurso 6Constancias.png" alt="" />
+          </div>
+        </div>
+        <div class="Datos">
+          <p class="CuserTitle" id="titleCurso"></p>
+          <p class="SubtituloCard">Este arkketipo fue terminado en:</p>
+          <p id="Fecha" class="FechaStyle">15/07/2024</p>
+          <!-- Botón para descargar la constancia -->
+          <input
+            class="ButtonDescargar ButtonDescargar-animacion"
+            type="button"
+            id="ArchivoDescargar"
+            value="Descargar"
+          />
+        </div>
+      </div>
+    </div>
+      <!-- Incluyo bibliotecas necesarias -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"></script>
+    <script src="https://unpkg.com/pdf-lib@1.17.1"></script>
+    <!-- Incluyo el archivo JavaScript principal -->
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

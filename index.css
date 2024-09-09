@@ -1,0 +1,375 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    font-family: "Oswald", sans-serif;
+    
+}
+.Subtitulo{
+    font-family: "Raleway", sans-serif;
+    font-size: 0.9rem;
+}
+
+.SubtituloCard{
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+}
+.ImgContainer{
+    margin-left:5rem;
+    width: 10%;
+    height: 12%;
+}
+
+.components{
+    display: flex;
+    height: 8rem;
+    color: white;
+    background: linear-gradient(to right,  #85af59, #b4c239);
+}
+
+.title{
+    font-family: "Alata", sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.ComponentsText{
+    width: 50%;
+    margin-left: 5rem;
+}
+
+.ComponentsText h1{
+    margin-bottom: 0;
+}
+
+.ComponentsText p{
+    margin-top: 0;
+}
+
+.ComponentsBuscador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    border-radius: 1rem;
+}
+
+
+.buscador{
+    font-family: "Raleway", sans-serif;
+    width: 35%;
+    border-radius: 2rem;
+    border: none;
+    height: 2rem;
+    padding-left: 1rem;
+}
+
+.Contenedores{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 20%;
+    height: 20rem;
+    background-color: #f2f2f2;
+    border-radius: 1rem;
+    border: 1px solid black;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+}
+
+
+.container:hover{
+  
+    transform: translateY(-10px);
+}
+.fondo{
+    width: 100%;
+    background: linear-gradient(to right,  rebeccapurple, #342977);
+    height: 30%;
+    border-top-left-radius: 1rem; 
+    border-top-right-radius: 1rem;
+}
+
+.fondocalificacion{
+    display: flex;
+    justify-content: end;
+}
+
+.calificacion{
+    display: flex;
+    width: 2.2rem;
+    height: 2.2rem;
+    background-color: white;
+    margin: 0.25rem;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(50%);
+}
+
+.Datos{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+}
+
+
+.figura{
+    position: relative;
+    width: 7rem; 
+    height: 7rem;
+    background-color: #f2e4f9;
+    clip-path: circle(50%);
+    left: 50%; 
+    top: 55%; 
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    overflow: hidden;
+}
+
+.figura img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.FechaStyle{
+    font-family: "Raleway", sans-serif;
+    font-size: 0.9rem;
+}
+
+.figura:hover {
+    animation: spin 1.50s  linear;
+}
+
+
+.CuserTitle{
+    font-family: "Alata", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.ButtonDescargar{
+    background: linear-gradient(to right,  rebeccapurple, #342977);
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    width: 10rem;
+    height: 2.50rem;
+    color: white;
+    border: 5px solid #fdfffa;
+    border-radius: 1.25rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.ButtonDescargar-animacion:hover {
+    animation: bounce 0.5s alternate;
+}
+@keyframes bounce {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotateY(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotateY(360deg);
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .components {
+        flex-direction: column;
+    }
+    .ComponentsBuscador{
+        width: 100%;
+    }
+    .buscador {
+        margin-top: 1rem;
+        width: 70%;
+        justify-content: center;
+    }
+    .ComponentsText{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .container {
+        width: 80%;
+    }
+    .Datos {
+        font-size: 0.75rem;
+    }
+    .ContenedorImagen{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    .ImgContainer{
+        margin: 0;
+        width: 40%;
+        height: 20%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+    .title {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .components {
+        flex-direction: column;
+    }
+    .ComponentsBuscador{
+        width: 100%;
+
+    }
+    .buscador {
+        margin-top: 1rem;
+        width: 70%;
+        justify-content: center;
+    }
+    .ComponentsText{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .container {
+        width: 65%;
+    }
+    .Datos {
+        font-size: 0.75rem;
+    }
+    .ContenedorImagen{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    .ImgContainer{
+        margin: 0;
+        width: 25%;
+        height: 20%;
+    }
+    
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+    .title {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .components {
+        flex-direction: column;
+    }
+    .ComponentsBuscador{
+        width: 100%;
+
+    }
+    .buscador {
+        margin-top: 1rem;
+        width: 70%;
+        justify-content: center;
+    }
+    .ComponentsText{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .container {
+        width: 50%;
+    }
+    .Datos {
+        font-size: 0.75rem;
+    }
+
+    .ImgContainer{
+        margin: 0;
+        width: 25%;
+        height: 20%;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .components{
+        align-items: center;
+
+    }
+    .buscador {
+        width: 80%;
+    }
+    .Contenedores {
+        flex-direction: row;
+        
+    }
+    .container {
+        width: 45%;
+    }
+    .ImgContainer{
+        margin: 0;
+        width: 20%;
+        height: 20%;
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    /* Estilos específicos para tablets medianas */
+    .components{
+        align-items: center;
+    }
+    .buscador {
+        width: 80%;
+    }
+    .Contenedores {
+        flex-direction: row;
+        
+    }
+    .container {
+        width: 30%;
+        height: 40%;
+    }
+    .Datos {
+        font-size: 0.75rem;
+    }
+    .ImgContainer{
+        margin: 0;
+        width: 15%;
+        height: 20%;
+    }
+}
+
+
